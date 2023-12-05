@@ -1,8 +1,0 @@
-
-BEGIN;
-
-DELETE FROM animals;
-
-ROLLBACK;
-
-SELECT * FROM animals;
