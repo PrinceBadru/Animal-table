@@ -122,6 +122,11 @@ Install this project with:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[Medical Records: Extend the database to include medical records for each animal, allowing veterinarians to log health information.]**
+- [ ] **[User Authentication: Implement user authentication to allow secure access to the database, with different roles for staff and administrators.]**
+- [ ] **[Appointment Scheduling: Add a feature for scheduling appointments for animals, making it easier to manage vet clinic operations.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
