@@ -1,21 +1,22 @@
-/* Database schema to keep the structure of entire database. */
-
--- Create the owners table
-CREATE TABLE owners (
+-- Create the vets table
+CREATE TABLE vets (
     id SERIAL PRIMARY KEY,
-    full_name VARCHAR(255),
-    age INTEGER
+    name VARCHAR(255),
+    age INTEGER,
+    date_of_graduation DATE
 );
 
--- Create the species table
-CREATE TABLE species (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(255)
+-- Create the species_vets join table
+CREATE TABLE species_vets (
+    vet_id INTEGER REFERENCES vets(id),
+    species_id INTEGER REFERENCES species(id),
+    PRIMARY KEY (vet_id, species_id)
 );
 
--- Modify the animals table
-ALTER TABLE animals
-DROP COLUMN species, -- Remove the existing species column
-ADD COLUMN species_id INTEGER REFERENCES species(id),
-ADD COLUMN owner_id INTEGER REFERENCES owners(id);
-
+-- Create the visits join table
+CREATE TABLE visits (
+    animal_id INTEGER REFERENCES animals(id),
+    vet_id INTEGER REFERENCES vets(id),
+    visit_date DATE,
+    PRIMARY KEY (animal_id, vet_id, visit_date)
+);
