@@ -119,7 +119,11 @@ Install this project with:
 
 - GitHub: [@PrinceBadru]
 - Twitter: [@NdawulaBadru]
+- 
+👤 **Md Arafat Hossain**
 
+- GitHub: [https://github.com/HossainAraf]
+- LinkedIn: [https://www.linkedin.com/in/md-arafat-hossain-111403275/]
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
