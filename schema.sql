@@ -23,3 +23,14 @@ CREATE TABLE visits (
 
 -- Add an email column to your owners table
 ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+SELECT * FROM owners WHERE email = 'owner_18327@mail.com';
+7:32
+INSERT INTO owners (full_name, email)
+SELECT 'Owner ' || generate_series(1, 2500000), 'owner_' || generate_series(1, 2500000) || '@mail.com';
+
+
+
+
+
+
